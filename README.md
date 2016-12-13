@@ -1,30 +1,25 @@
-# Angular2SampleExamples
+# Angular2 Examples Set.
+Angular 2 sample example set created with angular-cli. The project contain basic examples with all building blocks of angular2. you can check the routes.ts file for example detail.
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.19-3.
+Routes = [
+  {path: '', component: HelloNG2Component},
+  {path: 'example2', component: TemplateSyntaxPropertiesComponent},
+  {path: 'example3', component: InputOutputComponentComponent},
+  {path: 'example4', component: CoreDirectivesComponent},
+  {path: 'example5', component: PipesExComponent},
+  {path: 'example6', component: HttpComComponent},
+  {path: 'example7', component: HttpExWithServiceComponent},
+  {path: 'example8', component: ReactiveFormComponent},
+   ---------------
+   ---------------
+  {path: '**', component: HelloNG2Component},
+];
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
+## Installation.
+Download the project and run command npm install.
+Make sure that angular-cli is installed globally otherwise install it with npm install -g angular-cli.
+Run command ng serve.
+The project is available at http://localhost:4200.
 
 ## Further help
 
