@@ -1,0 +1,14 @@
+<h3>Example of HTML Template with binding properties and styling component. </h3>
+
+<div class="color-sample" [style.background]="'red'">
+Color Sample</div>
+
+<button [disabled]="true">Disabled</button> 
+
+<input [required]="true" value="Hello NG2 !">
+
+<!-- Template Interpolation -->
+<label>Message:</label>{{ model?.message }}
+
+<input value="Hello NG2 !" #input>{{input.value}}
+<button (click)="onClick()">Click Me</button>

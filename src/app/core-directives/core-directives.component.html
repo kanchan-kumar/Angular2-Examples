@@ -1,0 +1,22 @@
+
+<h3>Example of Core Directives ngFor, ngIf, ngClass, ngStyle etc. </h3>
+
+<table>
+        <thead>
+            <th>Name</th>
+            <th>Index</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let hero of heroes; let i = index">
+                <td  [ngClass]="hero">{{hero}}</td>
+                <td>{{i}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+<div class="toggle-panel" *ngIf="show" 
+                [hidden]="hidden" [style.visibility]="visibility" >Toggle Me</div>
+            
+<button (click)="toggleShow()">Show/Hide with ngIf</button>
+<button (click)="toggleHidden()">Show/Hide with display Prop </button>
+<button (click)="toggleVisible()">Show/Hide with visible Prop</button>

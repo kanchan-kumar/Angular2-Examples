@@ -1,0 +1,8 @@
+<h3>Example of Input/Output Bindings. </h3>
+
+<app-color-picker #picker [color]="color" (colorOutput)="colorOutput($event)">  
+</app-color-picker>
+    
+<app-color-previewer #previewer [color]="color"></app-color-previewer>
+    
+<button (click)="picker.reset()">Reset</button>
