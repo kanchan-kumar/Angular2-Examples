@@ -3,16 +3,16 @@
 </br>
 Routes = [ </br>
  &nbsp;  &nbsp;  &nbsp; {path: '', component: HelloNG2Component}, </br>
-  {path: 'example2', component: TemplateSyntaxPropertiesComponent}, </br>
-  {path: 'example3', component: InputOutputComponentComponent}, </br>
-  {path: 'example4', component: CoreDirectivesComponent}, </br>
-  {path: 'example5', component: PipesExComponent}, </br>
-  {path: 'example6', component: HttpComComponent}, </br>
-  {path: 'example7', component: HttpExWithServiceComponent}, </br>
-  {path: 'example8', component: ReactiveFormComponent}, </br>
-   --------------- </br>
-   --------------- </br>
-  {path: '**', component: HelloNG2Component}, </br>
+  &nbsp;  &nbsp;  &nbsp;{path: 'example2', component: TemplateSyntaxPropertiesComponent}, </br>
+   &nbsp;  &nbsp;  &nbsp;{path: 'example3', component: InputOutputComponentComponent}, </br>
+  &nbsp;  &nbsp;  &nbsp; {path: 'example4', component: CoreDirectivesComponent}, </br>
+  &nbsp;  &nbsp;  &nbsp; {path: 'example5', component: PipesExComponent}, </br>
+  &nbsp;  &nbsp;  &nbsp; {path: 'example6', component: HttpComComponent}, </br>
+   &nbsp;  &nbsp;  &nbsp;{path: 'example7', component: HttpExWithServiceComponent}, </br>
+   &nbsp;  &nbsp;  &nbsp;{path: 'example8', component: ReactiveFormComponent}, </br>
+  &nbsp;  &nbsp;  &nbsp;  --------------- </br>
+  &nbsp;  &nbsp;  &nbsp;  --------------- </br>
+ &nbsp;  &nbsp;  &nbsp;  {path: '**', component: HelloNG2Component}, </br>
 ]; </br>
 </br>
 ## **Installation**.
