@@ -2,7 +2,7 @@
 **Angular 2** sample example set created with angular-cli. The project contain basic examples with all building blocks of angular2. you can check the **routes.ts** file for example detail. </br>
 </br>
 Routes = [ </br>
-  {path: '', component: HelloNG2Component}, </br>
+ &nbsp;  &nbsp;  &nbsp; {path: '', component: HelloNG2Component}, </br>
   {path: 'example2', component: TemplateSyntaxPropertiesComponent}, </br>
   {path: 'example3', component: InputOutputComponentComponent}, </br>
   {path: 'example4', component: CoreDirectivesComponent}, </br>
