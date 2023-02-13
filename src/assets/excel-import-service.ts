@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import * as Excel from 'exceljs/dist/exceljs.min';
-import * as papa from 'papaparse';
 
 @Injectable({
   providedIn: 'root'
@@ -43,10 +42,19 @@ export class ExcelImportService {
       const reader = new FileReader();
       reader.onload = function() {
         const csvData = reader.result as string;
-        const parsedData = papa.parse(csvData, {
-          header: true
-        });
-        resolve(parsedData.data);
+        const rows = csvData.split('\n');
+        const headers = rows[0].split(',');
+        const data = [];
+        for (let i = 1; i < rows.length; i++) {
+          const row = rows[i];
+          const cells = row.split(',');
+          const obj = {};
+          for (let j = 0; j < headers.length; j++) {
+            obj[headers[j]] = cells[j];
+          }
+          data.push(obj);
+        }
+        resolve(data);
       };
       reader.readAsText(file);
     });
